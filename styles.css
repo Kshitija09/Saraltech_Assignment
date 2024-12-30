@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(135deg, #fff8e1, #ffe0b2);
+  color: #333;
+  line-height: 1.8;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background: linear-gradient(90deg, #ff8c00, #ffb74d);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeInDown 1s ease;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.header h1 {
+  font-size: 2.8rem;
+  margin: 0;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.header p {
+  font-style: italic;
+  margin: 10px 0 0;
+  font-size: 1.3rem;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #ff6f00, #ff8c00);
+  color: white;
+  padding: 15px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  margin: 0 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ffd700;
+}
+
+.main-content {
+  padding: 30px;
+  max-width: 900px;
+  margin: 20px auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease;
+}
+
+.main-content h2 {
+  text-align: center;
+  color: #ff6f00;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.main-content p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+.footer {
+  background: linear-gradient(90deg, #ff6f00, #ff8c00);
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: auto;
+  font-size: 0.9rem;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer a {
+  color: #ffd700;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar li {
+    margin: 10px 0;
+  }
+
+  .header h1 {
+    font-size: 2.2rem;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
